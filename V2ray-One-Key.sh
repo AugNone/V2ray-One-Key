@@ -38,15 +38,15 @@ git clone https://github.com/AugNone/V2ray-One-Key
 bash <(curl -L -s https://install.direct/go.sh)
 
 #配置V2ray初始环境
-cp /usr/local/v2ray.fun/v2ray /usr/local/bin
+cp /usr/local/V2ray-One-Key/v2ray /usr/local/bin
 chmod +x /usr/bin/v2ray
 chmod +x /usr/local/bin/v2ray
 rm -rf /etc/v2ray/config.json
-mv /usr/local/v2ray.fun/json_template/server.json /etc/v2ray/config.json
+mv /usr/local/V2ray-One-Key/json_template/server.json /etc/v2ray/config.json
 UUID=$(cat /proc/sys/kernel/random/uuid)
 sed -i "s/cc4f8d5b-967b-4557-a4b6-bde92965bc27/${UUID}/g" /etc/v2ray/config.json
-python /usr/local/v2ray.fun/genclient.py
-python /usr/local/v2ray.fun/openport.py
+python /usr/local/V2ray-One-Key/genclient.py
+python /usr/local/V2ray-One-Key/openport.py
 service v2ray restart
 
 
