@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import os
-import readjson
+import readjson.py
 
 
 cmd1="iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport " + str(readjson.ConfPort) +" -j ACCEPT"
