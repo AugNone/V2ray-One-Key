@@ -37,8 +37,8 @@ if [[ ${choice} == 1 ]]; then
     done
     if [[ ${schoice} == 1 ]]; then
         service v2ray start
-        python /usr/local/v2ray.fun/openport.py
-        python /usr/local/v2ray.fun/genclient.py
+        python /usr/local/V2ray-One-Key/openport.py
+        python /usr/local/V2ray-One-Key/genclient.py
         echo "服务启动成功！"
     fi
     if [[ ${schoice} == 2 ]]; then
@@ -47,8 +47,8 @@ if [[ ${choice} == 1 ]]; then
     fi
     if [[ ${schoice} == 3 ]]; then
         service v2ray restart
-        python /usr/local/v2ray.fun/openport.py
-        python /usr/local/v2ray.fun/genclient.py
+        python /usr/local/V2ray-One-Key/openport.py
+        python /usr/local/V2ray-One-Key/genclient.py
         echo "服务已重启！"
     fi
     if [[ ${schoice} == 4 ]]; then
@@ -81,33 +81,33 @@ if [[ ${choice} == 2 ]]; then
     done
     
     if [[ ${changechoice} == 1 ]]; then
-        python /usr/local/v2ray.fun/changeuuid.py
-        python /usr/local/v2ray.fun/genclient.py
+        python /usr/local/V2ray-One-Key/changeuuid.py
+        python /usr/local/V2ray-One-Key/genclient.py
 	    service v2ray restart
         echo ""
         echo "UUID修改成功！"
     fi
     
     if [[ ${changechoice} == 2 ]]; then
-        python /usr/local/v2ray.fun/changeport.py
-        python /usr/local/v2ray.fun/genclient.py
-        python /usr/local/v2ray.fun/openport.py
+        python /usr/local/V2ray-One-Key/changeport.py
+        python /usr/local/V2ray-One-Key/genclient.py
+        python /usr/local/V2ray-One-Key/openport.py
 	    service v2ray restart
         echo ""
         echo "端口修改成功！"
     fi
     
     if [[ ${changechoice} == 3 ]]; then
-        python /usr/local/v2ray.fun/changesecurity.py
-        python /usr/local/v2ray.fun/genclient.py
+        python /usr/local/V2ray-One-Key/changesecurity.py
+        python /usr/local/V2ray-One-Key/genclient.py
 	    service v2ray restart
         echo ""
         echo "加密方式修改成功！"
     fi
     
     if [[ ${changechoice} == 4 ]]; then
-        python /usr/local/v2ray.fun/changestream.py
-        python /usr/local/v2ray.fun/genclient.py
+        python /usr/local/V2ray-One-Key/changestream.py
+        python /usr/local/V2ray-One-Key/genclient.py
 	    service v2ray restart
         echo ""
         echo "传输模式修改成功！"
@@ -115,13 +115,13 @@ if [[ ${choice} == 2 ]]; then
 fi
 
 if [[ ${choice} == 3 ]]; then
-    python /usr/local/v2ray.fun/serverinfo.py
+    python /usr/local/V2ray-One-Key/serverinfo.py
     bash /usr/local/bin/v2ray
 fi
 
 if [[ ${choice} == 4 ]]; then
     echo "请选择文件保存位置（此功能仅限Xshell使用）"
-    python /usr/local/v2ray.fun/genclient.py
+    python /usr/local/V2ray-One-Key/genclient.py
     sz /root/config.json
     echo "保存成功！"
     echo ""
