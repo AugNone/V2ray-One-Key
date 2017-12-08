@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import readjson.py
+import readjson
 import urllib2
 import base64
 #获取本机IP地址
