@@ -21,8 +21,8 @@ def is_number(s):
     return False
 
 #主要程序部分
-print ("当前V2ray主端口为：%s") % str(readjson.ConfPort)
-print ("请输入V2ray新端口：")
+print ("当前主端口为：%s") % str(readjson.ConfPort)
+print ("请输入新端口：")
 newport=raw_input()
 if (is_number(newport)):
     writejson.WritePort(newport)

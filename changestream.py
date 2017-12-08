@@ -60,11 +60,11 @@ else:
         if(newstreamnetwork=="1"):
             writejson.WriteStreamNetwork("tcp","none")
         elif(newstreamnetwork=="2"):
-            print("请输入你想要为伪装的域名（不需要带上http）：")
+            print("请输入你想要为伪装的域名（不不不需要http）：")
             host=raw_input()
             writejson.WriteStreamNetwork("tcp",str(host))
         elif(newstreamnetwork=="3"):
-            print("请输入你的服务器绑定域名（不需要带上http）：")
+            print("请输入你的服务器绑定域名（不不不需要http）：")
             host=raw_input()
             writejson.WriteStreamNetwork("ws",str(host))
         elif(newstreamnetwork=="4"):
