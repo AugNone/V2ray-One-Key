@@ -15,6 +15,8 @@ v2ray一键脚本？？？
   - mKCP 伪装 FaceTime通话流量
   - mKCP 伪装 BT下载流量
   - mKCP 伪装 微信视频通话流量
+  
+  Websocket + TLS + Nginx / Caddy 请参见博客教程（谋划中
 ### 安装命令
 wget -N --no-check-certificate https://raw.githubusercontent.com/AugNone/V2ray-One-Key/master/V2ray-One-Key.sh && bash V2ray-One-Key.sh
 
@@ -32,4 +34,5 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/AugNone/V2ray-O
 有任何问题或者新功能想法欢迎提交 Issue，我会抽空回答。
 ## 感谢
 V2ray : [https://v2ray.com](https://v2ray.com)
+
 雨落无声 : [https://ylws.me](https://ylws.me)
