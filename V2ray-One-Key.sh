@@ -50,7 +50,7 @@ python /usr/local/V2ray-One-Key/openport.py
 service v2ray restart
 
 
-#clear
+clear
 
 echo "V2ray-One-Key 安装成功！原作By: 雨落无声，修改：AugNone"
 echo "输入 v2ray 回车即可使用"
